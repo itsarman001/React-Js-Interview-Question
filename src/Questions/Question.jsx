@@ -19,45 +19,61 @@ function Question() {
     setCount((prevUpdate) => prevUpdate + 1);
   };
 
-  const Decreament = () => {
+  const decrement = () => {
     setCount(count - 1);
   };
   return (
     <div className="px-6 py-2 ">
-      <div className="text-2xl">Count: {count}</div>
-      <label htmlFor="">simple Increament</label>
-      <button
-        className="px-2 py-1 bg-green-500 mx-2 rounded text-white font-bold uppercase my-3 hover:bg-green-600"
-        onClick={increament}
-      >
-        Increament
-      </button>{" "}
-      <br />
-      <hr />
-      <label htmlFor=""> with multipe set count</label>
-      <button
-        className="px-2 py-1 bg-green-500 mx-2 rounded text-white font-bold uppercase my-3 hover:bg-green-600"
-        onClick={increament}
-      >
-        Increament
-      </button>
-      <br />
-      <hr />
-      <label htmlFor=""> with prev value set count</label>
-      <button
-        className="px-2 py-1 bg-green-500 mx-2 rounded text-white font-bold uppercase my-3 hover:bg-green-600"
-        onClick={increamentWithCallback}
-      >
-        Increament
-      </button>
-      <br />
-      <hr />
-      <button
-        className="px-2 py-1 bg-red-500 mx-2 rounded text-white font-bold uppercase my-3 hover:bg-red-600"
-        onClick={Decreament}
-      >
-        Decreament
-      </button>
+      <div className="max-w-md mx-auto p-4">
+        <div className="text-2xl font-semibold mb-4">Count: {count}</div>
+
+        <label htmlFor="simpleIncrement" className="block mb-2">
+          Simple Increment:
+        </label>
+        <button
+          id="simpleIncrement"
+          className="px-2 py-1 bg-green-500 rounded text-white font-bold uppercase hover:bg-green-600"
+          onClick={increament}
+        >
+          Increment
+        </button>
+
+        <hr className="my-4" />
+
+        <label htmlFor="multipleSetCount" className="block mb-2">
+          Increment with Multiple Set Count:
+        </label>
+        <button
+          id="multipleSetCount"
+          className="px-2 py-1 bg-green-500 rounded text-white font-bold uppercase hover:bg-green-600"
+          onClick={increament}
+        >
+          Increment
+        </button>
+
+        <hr className="my-4" />
+
+        <label htmlFor="prevValueSetCount" className="block mb-2">
+          Increment with Previous Value Set Count:
+        </label>
+        <button
+          id="prevValueSetCount"
+          className="px-2 py-1 bg-green-500 rounded text-white font-bold uppercase hover:bg-green-600"
+          onClick={increamentWithCallback}
+        >
+          Increment
+        </button>
+
+        <hr className="my-4" />
+
+        <button
+          className="px-2 py-1 bg-red-500 rounded text-white font-bold uppercase hover:bg-red-600"
+          onClick={decrement}
+        >
+          Decrement
+        </button>
+      </div>
+
       <div class="max-w-3xl mx-auto p-6">
         <h1 class="text-3xl font-bold mb-4">
           React State Updates and Batching
