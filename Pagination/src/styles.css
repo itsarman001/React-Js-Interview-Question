@@ -13,6 +13,24 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Loading and Error Messages */
+.loading,
+.error {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: red;
+}
+
+/* No Products Message */
+.no-products {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 /* Products Section */
 .products {
   display: flex;
@@ -55,6 +73,7 @@ body {
   gap: 5px;
   margin-top: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .pagination span {
@@ -78,4 +97,9 @@ body {
 .pagination__selected {
   background-color: #007bff;
   color: white;
+}
+
+.pagination__dots {
+  padding: 5px 10px;
+  color: #999;
 }
