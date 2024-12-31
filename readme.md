@@ -54,6 +54,7 @@ Explore live implementations of key React concepts:
 - [Dark and Light Mode](https://codesandbox.io/p/sandbox/dark-and-light-mode-pmzczw)
 - [Like Button](https://codesandbox.io/p/sandbox/like-button-jnqr6p)
 - [Pagination](https://codesandbox.io/p/sandbox/pagination-55q476)
+- [TicTactoe](https://codesandbox.io/p/sandbox/tic-tac-toe-pxgz9s)
 
 ## Contributing
 
